@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--==================== METADATOS ====================-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portfolios">
+    <meta name="keywords" content="HTML-CSS-JS">
+    <meta name="author" content="Rocio Cuello">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--==================== TITULO ====================-->
+    <title>Portfolios | Mini portfolio website</title>
+
+    <!--==================== ICONO DE PESTAÑA ====================-->
+    <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+
+    <!--==================== ICONS ====================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <!--=============== HEADER PROFILE ===============-->
+    <header class="profile container">
+    <i class="ri-moon-line change-theme" id="theme-button"></i>
+    <div class="profile__container grid">
+        <div class="profile__data">
+            <div class="profile__border">
+                <div class="profile__perfil">
+                    <img src="assets/img/perfil.png" alt="">
+                </div>
+            </div>
+            <h2 class="profile__name">Gianell Vusy</h2>
+            <h3 class="profile__profession">Desarrollador web</h3>
+
+            <ul class="profile__social">
+                <a href="https://www.instagram.com/" class="profile__social-link" target="_blank"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.linkedin.com/" class="profile__social-link" target="_blank"><i class="ri-linkedin-line"></i></a>
+                <a href="https://github.com/" class="profile__social-link" target="_blank"><i class="ri-github-fill"></i></a>
+            </ul>
+        </div>
+        <div class="profile__info grid">
+            <div class="profile__info-group">
+                <h3 class="profile__info-number">7</h3>
+                <p class="profile__info-description">Años de <br> trabajo</p>
+            </div>
+            <div class="profile__info-group">
+                <h3 class="profile__info-number">+124</h3>
+                <p class="profile__info-description">Proyectos <br> completados</p>
+            </div>
+            <div class="profile__info-group">
+                <h3 class="profile__info-number">96</h3>
+                <p class="profile__info-description">Clientes <br> satisfechos</p>
+            </div>
+        </div>
+        <div class="profile__buttons">
+            <a download="" href="assets/pdf/Gianell-Cv.pdf" class="button">Descargar CV<i class="ri-download-line"></i></a>
+            <div class="profile__buttons-small">
+                <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" target="_blank" class="button button__small button__gray"><i class="ri-whatsapp-line"></i></a>
+                <a href="https://m.me/bedimcode" class="button button__small button__gray" target="_blank"><i class="ri-messenger-line"></i></a>
+            </div>
+        </div>
+    </div>
+    </header>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+    <section class="filters container">
+        <!--=============== FILTERS TABS ===============-->
+        <ul class="filters__content">
+            <button class="filters__button filter-tab-active" data-target="#projects">Proyectos</button>
+            <button class="filters__button" data-target="#skills">Habilidades</button>
+        </ul>
+        <div class="filters__sections">
+            <!--=============== PROJECTS ===============-->
+            <div class="projects__content grid filters__active" data-content id="projects">
+                <article class="projects__card">
+                    <img src="assets/img/project1.jpg" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Web</span>
+                            <h3 class="projects__title">Sitio de pagos</h3>
+                            <a href="#" class="projects__button button button__small">
+                                <i class="ri-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="projects__card">
+                    <img src="assets/img/project2.jpg" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Web</span>
+                            <h3 class="projects__title">Sitio web de portafolio</h3>
+                            <a href="#" class="projects__button button button__small">
+                                <i class="ri-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="projects__card">
+                    <img src="assets/img/project3.jpg" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Móvil</span>
+                            <h3 class="projects__title">App de comida rápida</h3>
+                            <a href="#" class="projects__button button button__small">
+                                <i class="ri-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="projects__card">
+                    <img src="assets/img/project4.jpg" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Móvil</span>
+                            <h3 class="projects__title">App de viajes</h3>
+                            <a href="#" class="projects__button button button__small">
+                                <i class="ri-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="projects__card">
+                    <img src="assets/img/project5.jpg" alt="" class="projects__img">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Diseño</span>
+                            <h3 class="projects__title">Diseño de app de música</h3>
+                            <a href="#" class="projects__button button button__small">
+                                <i class="ri-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!--=============== SKILLS ===============-->
+            <div class="skills__content grid" data-content id="skills">
+                <div class="skills__area">
+                    <h3 class="skills__title">Desarrollador Frontend</h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__area">
+                    <h3 class="skills__title">Desarrollador Backend</h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">PHP</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Firebase</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Node Js</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Ruby</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__area">
+                    <h3 class="skills__title">Diseñador</h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Figma</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Adobe XD</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Photoshop</h3>
+                                    <span class="skills__level">Avanzado</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Illustrator</h3>
+                                    <span class="skills__level">Intermedio</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">After Effects</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Blender</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+        <span class="footer__copy">
+          &#169; Rocio Cuello. Todos los derechos reservados.
+        </span>
+    </footer>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script> 
+    <!--==================== script ====================-->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

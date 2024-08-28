@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--==================== METADATOS ====================-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Portafolio">
+  <meta name="keywords" content="HTML-CSS-JS">
+  <meta name="author" content="Rocio Cuello">
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--==================== TÍTULO ====================-->
+  <title>Portafolio | Sitio Web de Portafolio Animado</title>
+
+  <!--==================== ICONO DE PESTAÑA ====================-->
+  <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+</head>
+<body>
+  <section class="banner">
+    <header>
+      <a href="#" class="logo"><span>Mi</span>Portafolio_</a>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre mí</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <h3>Hola_</h3>
+      <h2>Soy <span id="text"></span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, harum.</p>
+      <button>Contrátame</button>
+      <button class="chat"><ion-icon name="chatbubbles-outline"></ion-icon> Chateemos</button>
+    </div>
+    <img src="assets/img/colors.png" alt="Colores" class="colors">
+    <img src="assets/img/men.png" alt="Hombre" class="men">
+    <ul class="sci">
+      <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    </ul>
+    <div class="dayNight">
+      <ion-icon name="sunny-outline"></ion-icon>
+      <ion-icon name="moon-outline"></ion-icon>
+    </div>
+  </section>
+
+  <!--==================== SCRIPT ====================-->
+  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+  <script>
+    let typingText = new Typed("#text", {
+      strings: ["John", "Diseñador", "Programador", "Youtuber"],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 1000
+    });
+
+    let banner = document.querySelector('.banner');
+    let dayNight = document.querySelector('.dayNight');
+    dayNight.onclick = function() {
+      banner.classList.toggle('night');
+    }
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
