@@ -1,76 +1,70 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-  <!--==================== METADATOS ====================-->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta name="description" content="Portfolios">
-      <meta name="keywords" content="HTML-CSS-JS">
-      <meta name="author" content="Rocio Cuello">
-      
-      <!--==================== CSS ====================-->
-      <link rel="stylesheet" href="assets/css/style.css">
+<html lang="es">
+<head>
+    <!--==================== METADATOS ====================-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portfolios">
+    <meta name="keywords" content="HTML-CSS-JS">
+    <meta name="author" content="Rocio Cuello">
 
-      <!--==================== TITULO ====================-->
-      <title>Portfolios | Responsive Personal Portfolio Website</title>
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-      <!--==================== ICONO DE PESTAÑA ====================-->
-      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
-  </head>
-  <body>
+    <!--==================== TITULO ====================-->
+    <title>Portfolios | Responsive Personal Portfolio Website</title>
+
+    <!--==================== ICONO DE PESTAÑA ====================-->
+    <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+</head>
+<body>
     <div class="overlay first"></div>
     <div class="overlay second"></div>
     <div class="overlay third"></div>
-
     <header class="l-header">
-    <nav class="nav bd-grid">
-        <div>
-            <a href="#" class="nav__logo">Portfolio</a>
-        </div>
-
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Inicio</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Acerca de</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Servicios</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
-            </ul>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-            <ion-icon name="menu"></ion-icon>
-        </div>
-    </nav>
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Portfolio</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Acerca de</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Servicios</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <ion-icon name="menu"></ion-icon>
+            </div>
+        </nav>
     </header>
     <main class="l-main bd-grid">
-    <div class="home">
-        <div class="home__information">
-            <span class="home__pressent anime-text">Hola, mi nombre es</span>
-            <h1 class="home__title anime-text">John Doe</h1>
-            <span class="home__skill anime-text">Desarrollador Web</span>
-            
-            <div>
-                <a href="#" class="home__button anime-text">DESCARGAR CV</a>
+        <div class="home">
+            <div class="home__information">
+                <span class="home__pressent anime-text">Hola, mi nombre es</span>
+                <h1 class="home__title anime-text">John Doe</h1>
+                <span class="home__skill anime-text">Desarrollador Web</span>
+                
+                <div>
+                    <a href="#" class="home__button anime-text">DESCARGAR CV</a>
+                </div>
+            </div>
+            <div class="home__img">
+                <img src="assets/img/img.jpg" alt="Imagen de John Doe">
+            </div>
+            <div class="home__social">
+                <ion-icon name="logo-facebook" class="home__social-icon"></ion-icon>
+                <ion-icon name="logo-instagram" class="home__social-icon"></ion-icon>
+                <ion-icon name="logo-twitter" class="home__social-icon"></ion-icon>
             </div>
         </div>
-
-        <div class="home__img">
-            <img src="assets/img/img.jpg" alt="Imagen de John Doe">
-        </div>
-        
-        <div class="home__social">
-            <ion-icon name="logo-facebook" class="home__social-icon"></ion-icon>
-            <ion-icon name="logo-instagram" class="home__social-icon"></ion-icon>
-            <ion-icon name="logo-twitter" class="home__social-icon"></ion-icon>
-        </div>
-
-    </div>
     </main>
-  <!--==================== script ====================-->
+    <!--==================== SCRIPT ====================-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script  type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
-  </body>
+</body>
 </html>
